@@ -1,0 +1,1 @@
+export const GET_MENU = state => state.menu

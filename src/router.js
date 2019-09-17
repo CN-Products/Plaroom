@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from './pages/Index'
+import Home from './views/Home'
 
 Vue.use(Router)
 
-const Login = () => import('./pages/Login.vue')
+const Login = () => import('./views/Home.vue')
 
 export default new Router({
   mode: 'history',
@@ -12,7 +12,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Index,
+      component: Home,
       children: [
         
       ]

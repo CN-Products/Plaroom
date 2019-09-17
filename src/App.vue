@@ -1,23 +1,26 @@
 <template>
-  <div id="app">
-    <router-view />
-  </div>
+  <v-app>
+    <Header :menu="menu" />
+    <Menu />
+    <v-content>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
+import Header from './components/Header'
+import Menu from './components/Menu'
 
 export default {
-  name: 'app'
-}
+  name: 'App',
+  components: {
+    Header,
+    Menu
+  },
+  data () {
+    return {
+      menu: false,
+    }
+  },
+};
 </script>
-
-<style lang="stylus">
-#app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  width 100%
-  height 100%
-</style>

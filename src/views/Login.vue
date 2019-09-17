@@ -31,11 +31,18 @@ export default {
               password: ''
           }
       }
+  },
+  methods: {
+      auth () {
+          if (this.name === 'isafgor', this.password === '123') {
+              
+          }
+      }
   }
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="sass" scoped>
 .login
     width 100%
     height 100%
